@@ -61,9 +61,9 @@ class ViewController: UIViewController {
 		}
 		counter += 1
 		askQuestion()
+		
 		if counter == 10 {
 			let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-			ac.addAction(UIAlertAction(title: "END", style: .default))  //askQuestion is closure here
 			present(ac,animated: true)
 		}
 	}
