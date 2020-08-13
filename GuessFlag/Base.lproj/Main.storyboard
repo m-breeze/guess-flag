@@ -10,27 +10,36 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessFlag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIN-bf-cRU">
-                                <rect key="frame" x="107" y="330" width="200" height="100"/>
+                                <rect key="frame" x="107" y="254" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jIN-bf-cRU" secondAttribute="height" multiplier="2:1" id="NOV-md-2gu"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PaX-Pt-K3T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY9-bI-g6e">
-                                <rect key="frame" x="107" y="460" width="200" height="100"/>
+                                <rect key="frame" x="107" y="384" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yY9-bI-g6e" secondAttribute="height" multiplier="2:1" id="hiy-wj-NvX"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khU-at-zV3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-bl-bL6">
-                                <rect key="frame" x="107" y="200" width="200" height="100"/>
+                                <rect key="frame" x="107" y="124" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yvm-bl-bL6" secondAttribute="height" multiplier="2:1" id="SN3-r6-B34"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K54-ji-iFU"/>
@@ -40,9 +49,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jIN-bf-cRU" firstAttribute="top" secondItem="yvm-bl-bL6" secondAttribute="bottom" constant="30" id="2H1-iX-EYA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yY9-bI-g6e" secondAttribute="bottom" constant="20" id="7NT-zm-fe1"/>
                             <constraint firstItem="yvm-bl-bL6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="F0s-QO-wRl"/>
                             <constraint firstItem="yY9-bI-g6e" firstAttribute="top" secondItem="jIN-bf-cRU" secondAttribute="bottom" constant="30" id="Fsm-Mr-eHg"/>
-                            <constraint firstItem="yvm-bl-bL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="avc-lZ-nsM"/>
+                            <constraint firstItem="yvm-bl-bL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="avc-lZ-nsM"/>
+                            <constraint firstItem="yY9-bI-g6e" firstAttribute="height" secondItem="jIN-bf-cRU" secondAttribute="height" id="dHZ-kH-gTw"/>
+                            <constraint firstItem="jIN-bf-cRU" firstAttribute="height" secondItem="yvm-bl-bL6" secondAttribute="height" id="dVA-HZ-eIe"/>
                             <constraint firstItem="yY9-bI-g6e" firstAttribute="centerX" secondItem="jIN-bf-cRU" secondAttribute="centerX" id="f9p-yi-ZZD"/>
                             <constraint firstItem="jIN-bf-cRU" firstAttribute="centerX" secondItem="yvm-bl-bL6" secondAttribute="centerX" id="iLX-Hh-gAJ"/>
                         </constraints>
